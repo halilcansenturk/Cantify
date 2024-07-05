@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    border-style: dotted none none;
+    border-color: #8e9292;
+    border-width: 5px;
+    width: 5%;
+    margin: 100px auto;
+    opacity: 50%;
+}
+/*navbar*/
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color:#ededed ;
+    text-decoration: none; /*altı çizili link bağlantısını sildi*/
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none; /*altı çizili link bağlantısını sildi*/
+    margin-left: 20px;
+    transition: 0.3s; /*üstüne geldiğinde yumuşak geçiş*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover, .navbar a.active, .links a:hover{
+    color: #12dbe2;
+}
+
+/*topMain*********************/
+
+.main{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    height: 100vh;
+}
+
+.main div {
+    color: white;
+}
+
+.topTitle{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.topTitle img{
+   width: 5%;
+}
+
+.bigTitle {
+    font-size: 5.625rem;
+    font-family: 'Zen Dots', cursive;
+    color:  #12dbe2;
+}
+
+.littleTitle h2{
+    font-weight: 100;
+    font-size: 2.5rem;
+    font-family: 'Poiret One', cursive;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+.bigImage{
+    text-align: center;
+}
+.bigImage img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+/*MiddleMainn*********/
+
+
+
+.topDescript{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+     
+}
+
+.topDescript h2{
+      font-family: 'Merriweather', serif;
+      color: #66BFBF;
+      font-weight: 500;
+      font-size: 2.5rem;
+}
+
+.topDescript p {
+    font-family: 'Poppins', sans-serif;
+    width: 30%;
+    text-align: center;
+    line-height: 2;
+    font-weight: 500;
+    position: relative;
+    bottom: 30px;
+}
+
+.topDescript img{
+    width: 10%;
+    margin-top: 50px;
+}
+ 
+/*skill*/
+
+.skills{
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.skills h2 , .contact h2 
+    
+{
+    text-align: center;
+    font-size: 50px;
+    color: #66BFBF;
+    font-weight: 100;
+}
+
+.skills-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-box div {
+ width: 25%;   
+}
+
+.skills-box div h3, .contact h3 {
+    font-family: 'Merriweather', serif;
+    color: #11999E; 
+   }
+
+.skills-box div p {
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;  
+   }
+
+
+.skills-box img{
+    width: 10%; 
+}
+
+/*Contact*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact p {
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+}
+
+.contact a{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#09bdc4, #057779);
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.contact a:hover {
+    background-image: linear-gradient(#010607, #057779);
+}
+
+  /*footer*/
+
+  .footer{
+    background-color: #010607;
+    display: flex;
+    height: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .links a{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 50px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .offical {
+    color: rgb(112, 112, 112);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+  }
+
+
+
+
+
+
+
+@media (max-width:700px) {
+  
+    .logo{
+        font-size: 7px;
+    }
+    
+    .navbar a{
+        font-size: 7px;
+    }
+    
+    .topTitle img{
+       width: 10%;
+    }
+    
+    .bigTitle {
+        font-size: 30px;
+       
+    }
+    
+    .littleTitle h2{
+        font-size: 20px;
+        bottom: 5px;
+        
+    }
+    
+
+    .bigImage img{
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    /*MiddleMainn*********/
+
+    .topDescript h2{
+        font-size: 25px;
+  }
+  
+  .topDescript p {
+     
+      width: 100%;
+      position: relative;
+      bottom: 0px;
+      padding: 0 30px;
+      font-size: 15px;
+  }
+  
+  .topDescript img{
+      width: 10%;
+      margin-top: 50px;
+  }
+
+    .skills{
+        gap: 50px;
+    }
+
+    .skills h2 {
+        font-size: 25px;
+    }
+
+    .skills-box{
+        padding: 0 50px;
+        gap: 20px;
+    }
+
+    .skills-box div {
+        width: 100%;
+       }
+
+       .skills-box img{
+        width: 30%; 
+    }
+
+    .skills-box div h3 {
+
+        font-size: 15px;
+    
+       }
+
+    .skills-box div p {
+
+        font-size: 12px;
+    
+       }
+
+       .contact p {
+        font-size:12px;
+        width: 70%;
+       }
+
+       .contact h2 {
+        font-size: 25px;
+       }
+
+       .contact h3 {
+        font-size: 15px;
+        width: 60%;
+       }
+
+       .contact a {
+        padding: 5px 10px;
+        font-size: 10px;
+       }
+
+       .footer{
+        gap: 10px;
+       }
+
+       .links a{
+        margin: 0 20px;
+        font-size: 10px;
+      }
+    
+      .offical {
+        font-size: 7px;
+    
+      }
+       
+    
+}
+
+
+@media (min-width:700px) and (max-width:900px){
+
+    .main{
+        gap: 0px;
+    }
+
+    .littleTitle h2{
+        bottom: 0px;
+        
+    }
+
+    .bigTitle{
+        margin-top: 50px;
+    }
+
+    .bigImage img{
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .skills-box div {
+        width: 50%;   
+       }
+
+       .skills-box img{
+        width: 15%; 
+    }
+    
+}
+
+
+@media (min-width:900px) and (max-width:1400px){
+   
+    .main{
+        gap: 0px;
+    }
+
+    .littleTitle h2{
+        bottom: 0px;
+        
+    }
+
+    .bigTitle{
+        margin-top: 50px;
+    }
+
+    .bigImage img{
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .skills-box div {
+        width: 40%;   
+       }
+
+       .skills-box img{
+        width: 15%;
+       }
+}
